@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providers List</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file if you have one -->
+</head>
+<body>
+    <h1>Providers List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Provider Specialty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% providers.forEach(provider => { %>
+                <tr>
+                    <td><%= provider.first_name %></td>
+                    <td><%= provider.last_name %></td>
+                    <td><%= provider.provider_specialty %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

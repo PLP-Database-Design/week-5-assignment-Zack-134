@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patients</title>
+</head>
+<body>
+  <h1>Patients List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Patient ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% patients.forEach(function(patient) { %> 
+        <tr>
+          <td><%= patient.patient_id %></td>
+          <td><%= patient.first_name %></td>
+          <td><%= patient.last_name %></td>
+          <td><%= patient.date_of_birth %></td> 
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>

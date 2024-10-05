@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Providers</title>
+</head>
+<body>
+  <h1>Providers List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Specialty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% providers.forEach(function(provider) { %> 
+        <tr>
+          <td><%= provider.first_name %></td>
+          <td><%= provider.last_name %></td>
+          <td><%= provider.provider_specialty %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
